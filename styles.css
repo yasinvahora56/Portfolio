@@ -611,3 +611,7 @@
                 display: none;
             }
         }
+
+        .n8n-chat-widget {
+  --n8n-primary-color: #0099ff; /* Replace with your desired color */
+}

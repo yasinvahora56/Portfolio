@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="Yasin Vahora - Full Stack Developer specializing in MERN Stack and WordPress development">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -207,5 +208,16 @@
             });
         });
     </script>
+
+    <script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://yasin123.app.n8n.cloud/webhook/c9212a16-be2c-4643-8990-6f154b0389e1/chat',
+        initialMessages: [
+    "Ask Me"
+  ],
+	});
+</script>
 </body>
 </html>
